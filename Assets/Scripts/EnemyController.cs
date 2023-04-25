@@ -7,6 +7,8 @@ public class EnemyController : MonoBehaviour
     public float speed;
     public bool vertical;
     public float changeTime = 3.0f;
+    public ParticleSystem smokeEffect;
+    public GameObject hitEffectPrefab;
 
     new Rigidbody2D rigidbody2D;
     Animator animator;
@@ -78,6 +80,7 @@ public class EnemyController : MonoBehaviour
         if (player != null)
         {
             player.ChangeHealth(-1);
+            Instantiate(hitEffectPrefab, other.gameObject.transform.position + new Vector3(0, 1, 0), Quaternion.identity);
         }
     }
 
@@ -86,5 +89,6 @@ public class EnemyController : MonoBehaviour
         broken = false;
         rigidbody2D.simulated = false;
         animator.SetTrigger("Fixed");
+        smokeEffect.Stop();
     }
 }

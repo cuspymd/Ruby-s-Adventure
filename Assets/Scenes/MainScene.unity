@@ -19890,6 +19890,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3414710765204222743, guid: c88bab371401ac14c83893ee3e45c3ad, type: 3}
   m_PrefabInstance: {fileID: 3414710765007974752}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1196286042 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7118869228737697263, guid: 45b4cbf2b58df4e42b09fad4ff074401, type: 3}
+  m_PrefabInstance: {fileID: 7556956749119488180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1406530275
 GameObject:
   m_ObjectHideFlags: 0
@@ -20578,5 +20583,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7556956748065345268, guid: 45b4cbf2b58df4e42b09fad4ff074401, type: 3}
+      propertyPath: smokeEffect
+      value: 
+      objectReference: {fileID: 1196286042}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45b4cbf2b58df4e42b09fad4ff074401, type: 3}
